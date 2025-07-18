@@ -46,6 +46,10 @@ h4 {
   font: var(--h4);
 }
 
+p {
+  font: var(--p16);
+}
+
 .header-button,
 .primary-button {
   padding: 0.5rem 1rem;
@@ -171,7 +175,7 @@ header {
 /* Home Page Styling */
 .hero {
   width: 100%;
-  min-height: 80vh;
+  min-height: 90vh;
   background: linear-gradient(rgba(0, 0, 0, 0.725), rgba(0, 0, 0, 0.725)),
     url("/assets/images/hero-img.avif");
   background-position: center;
@@ -182,7 +186,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 3.75rem;
+  gap: 3.25rem;
   color: white;
 }
 
@@ -204,4 +208,54 @@ header {
 .hero-button {
   width: fit-content;
   align-self: center;
+}
+
+/* Why Section Styling */
+.why-cusd {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 6.25rem;
+  border-bottom: solid black;
+  gap: 1.5rem;
+}
+
+.why {
+  color: var(--colorprimary);
+  margin: 1rem;
+}
+
+.why-desc {
+  font: var(--h2);
+  color: var(--colorblack);
+}
+
+.why-cards {
+  display: flex;
+  gap: 1.25rem;
+  flex: 1;
+}
+
+.why-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3.75rem;
+  background-color: var(--colorprimary);
+  border-radius: 4px;
+  padding: 2.5rem 3rem;
+  margin: 1rem 1.25rem;
+  color: white;
+  flex: 1;
+}
+
+.why-card-desc {
+  color: var(--colorsecondary);
+}
+
+/* About Section Styling */
+.about {
+  height: 100vh;
+  width: 100%;
 }
