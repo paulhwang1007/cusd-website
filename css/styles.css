@@ -1,10 +1,17 @@
 :root {
+  --colorblack: #2e2e2e;
+  --colorgray: #616161;
+  --colorwhite: #ffffff;
   --colorprimary: #3da46b;
   --colorsecondary: #cfeadb;
   --colorborder: #368f5f;
   --colorhover: #4fcf8a;
   --colorpressed: #2e7b50;
   --colorfocus: #9be9c0;
+  --colorC: #80c26c;
+  --colorU: #83c2ba;
+  --colorS: #3f9a8e;
+  --colorD: #3faa6d;
   --ff: "Inter", sans-serif;
   --h1: bold 2.25rem/2.75rem var(--ff);
   --h2: bold 1.75rem/2.25rem var(--ff);
@@ -12,6 +19,7 @@
   --h4: normal 1.25rem/1.75rem var(--ff);
   --p16: normal 1rem/1.5rem var(--ff);
   --p12: normal 0.75rem/1rem var(--ff);
+  --shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
 }
 
 * {
@@ -20,49 +28,144 @@
   padding: 0;
 }
 
-html {
-  background-color: black;
+h1 {
+  font: var(--h1);
 }
 
+h2 {
+  font: var(--h2);
+}
+
+h3 {
+  font: var(--h3);
+}
+
+h4 {
+  font: var(--h4);
+}
+
+p {
+  font: var(--p16);
+}
+
+.header-button,
+.primary-button {
+  padding: 0.5rem 1rem;
+  background-color: var(--colorprimary);
+  border: transparent;
+  border-radius: 4px;
+  color: var(--colorwhite);
+  font: var(--h4);
+  transition: 0.15s ease;
+}
+
+.header-button {
+  flex: 0 0 auto;
+  margin-right: 6.25rem;
+}
+
+.primary-button:hover,
+.header-button:hover {
+  background-color: var(--colorhover);
+  cursor: pointer;
+}
+
+.primary-button:active,
+.header-button:active {
+  background-color: var(--colorpressed);
+  cursor: pointer;
+}
+
+/* Header Styling */
 header {
+  position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.75);
-  height: 6.25rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  height: 7rem;
+  box-shadow: var(--shadow);
 }
 
-.cusd-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 3rem;
-  height: 3rem;
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-  font-family: "Helvetica";
-  text-transform: uppercase;
-}
-
-.c-icon {
-  background-color: seagreen;
-}
-
-.u-icon {
-  background-color: #3dae6a;
-}
-
-.s-icon {
-  background-color: #53cd84;
-}
-
-.d-icon {
-  background-color: #6ed9a0;
+.logo {
+  text-decoration: none;
 }
 
 .cusd-logo {
   display: flex;
+  gap: 0.75rem;
+  flex: 0 0 auto;
+  margin-left: 6.25rem;
+}
+
+.cusd-logo-img {
+  width: clamp(4rem, 4.25rem, 4.5rem);
+  height: auto;
+}
+
+.cusd-logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cu {
+  font: var(--h2);
+  color: var(--colorblack);
+}
+
+.sd {
+  font: var(--h4);
+  color: var(--colorgray);
+}
+
+.header-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-link {
+  font: var(--h4);
+  color: var(--colorgray);
+  text-decoration: none;
+}
+
+.header-link:hover {
+  color: var(--colorhover);
+}
+
+.header-link:active {
+  color: var(--colorpressed);
+}
+
+.header-link.active {
+  color: var(--colorprimary);
+}
+
+.header-link-style {
+  display: inline-block;
+  position: relative;
+  margin: 0 0.75rem;
+}
+
+.header-link-style:last-child {
+  margin-right: 0;
+}
+
+.header-link-style:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+.header-link-style:hover:after {
+  width: 100%;
+  background: var(--colorhover);
 }
