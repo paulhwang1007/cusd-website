@@ -13,6 +13,7 @@
   --colorS: #3f9a8e;
   --colorD: #3faa6d;
   --ff: "Inter", sans-serif;
+  --title: 600 2.75rem/3.25rem var(--ff);
   --h1: bold 2.25rem/2.75rem var(--ff);
   --h2: bold 1.75rem/2.25rem var(--ff);
   --h3: bold 1.25rem/1.75rem var(--ff);
@@ -20,6 +21,7 @@
   --p16: normal 1rem/1.5rem var(--ff);
   --p12: normal 0.75rem/1rem var(--ff);
   --shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+  --text-shadow: 1px 1px 2px black;
 }
 
 * {
@@ -44,10 +46,6 @@ h4 {
   font: var(--h4);
 }
 
-p {
-  font: var(--p16);
-}
-
 .header-button,
 .primary-button {
   padding: 0.5rem 1rem;
@@ -55,13 +53,17 @@ p {
   border: transparent;
   border-radius: 4px;
   color: var(--colorwhite);
-  font: var(--h4);
   transition: 0.15s ease;
+}
+
+.primary-button {
+  font: var(--p16);
 }
 
 .header-button {
   flex: 0 0 auto;
   margin-right: 6.25rem;
+  font: var(--h4);
 }
 
 .primary-button:hover,
@@ -152,10 +154,6 @@ header {
   margin: 0 0.75rem;
 }
 
-.header-link-style:last-child {
-  margin-right: 0;
-}
-
 .header-link-style:after {
   content: "";
   display: block;
@@ -168,4 +166,42 @@ header {
 .header-link-style:hover:after {
   width: 100%;
   background: var(--colorhover);
+}
+
+/* Home Page Styling */
+.hero {
+  width: 100%;
+  min-height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.725), rgba(0, 0, 0, 0.725)),
+    url("/assets/images/hero-img.avif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3.75rem;
+  color: white;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hero-heading {
+  font: var(--title);
+  text-shadow: var(--text-shadow);
+}
+
+.hero-subheading {
+  font: var(--h4);
+}
+
+.hero-button {
+  width: fit-content;
+  align-self: center;
 }
