@@ -25,6 +25,8 @@
   --text-shadow: 1px 1px 2px black;
 }
 
+/* || General Styles */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -50,6 +52,8 @@ h4 {
 p {
   font: var(--p16);
 }
+
+/* || Button Styles */
 
 .header-button,
 .primary-button {
@@ -110,7 +114,8 @@ p {
   cursor: pointer;
 }
 
-/* Header Styling */
+/* || Header Styling */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -123,6 +128,7 @@ header {
   box-shadow: var(--shadow);
 }
 
+/* Logo */
 .logo {
   text-decoration: none;
 }
@@ -155,6 +161,7 @@ header {
   color: var(--colorgray);
 }
 
+/* Links */
 .header-links {
   position: absolute;
   left: 50%;
@@ -199,7 +206,8 @@ header {
   background: var(--colorhover);
 }
 
-/* Footer Styling */
+/* || Footer Styling */
+
 footer {
   display: flex;
   flex-direction: column;
@@ -225,7 +233,7 @@ footer {
 .footer-divider {
   border: 1px solid rgba(207, 234, 219, 0.4);
   width: 80%;
-  margin-top: 3.25rem;
+  margin-top: 3.75rem;
 }
 
 .footer-bot {
@@ -239,6 +247,7 @@ footer {
 .subscribe {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
   color: white;
   position: absolute;
   left: 50%;
@@ -300,9 +309,14 @@ footer {
   padding: 0.5rem;
   background-color: rgba(207, 234, 219, 0.4);
   border-radius: 50%;
+  transition: 0.15s ease;
 }
 
-/* Home Page Styling */
+.social-icon:hover {
+  background-color: rgba(207, 234, 219, 0.75);
+}
+
+/* || Home Page Styling */
 .hero {
   width: 100%;
   min-height: 90vh;
@@ -340,7 +354,8 @@ footer {
   align-self: center;
 }
 
-/* Why Section Styling */
+/* || Why Section Styling */
+
 .why-cusd {
   width: 100%;
   min-height: 80vh;
@@ -392,7 +407,8 @@ footer {
   color: var(--colorsecondary);
 }
 
-/* Stats + Announcement Section */
+/* || Stats + Announcement Section */
+
 .stats,
 .announcement-container {
   width: 100%;
@@ -422,7 +438,8 @@ footer {
   color: #9e9e9e;
 }
 
-/* Images */
+/* || Home Horizontal Image Gallery */
+
 .images-section {
   height: 80vh;
   width: auto;
