@@ -85,14 +85,13 @@ p {
 
 /* Header Styling */
 header {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.95);
   height: 7rem;
   box-shadow: var(--shadow);
 }
