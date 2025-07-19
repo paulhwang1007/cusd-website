@@ -215,15 +215,22 @@ header {
   width: 100%;
   min-height: 60vh;
   display: flex;
-  flex-direction: column;
-  padding: 2rem 6.25rem;
+  padding: 2.5rem 3.75rem;
   border-bottom: solid black;
   gap: 1.5rem;
 }
 
+.why-text {
+  margin: 1rem;
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .why {
   color: var(--colorprimary);
-  margin: 1rem;
 }
 
 .why-desc {
@@ -233,7 +240,8 @@ header {
 
 .why-cards {
   display: flex;
-  gap: 1.25rem;
+  flex-direction: column;
+  gap: 0.25rem;
   flex: 1;
 }
 
@@ -241,10 +249,10 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 3.75rem;
+  gap: 1.75rem;
   background-color: var(--colorprimary);
   border-radius: 4px;
-  padding: 2.5rem 3rem;
+  padding: 1.75rem 2.5rem;
   margin: 1rem 1.25rem;
   color: white;
   flex: 1;
