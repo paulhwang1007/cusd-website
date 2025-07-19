@@ -59,9 +59,24 @@ p {
   border-radius: 4px;
   color: var(--colorwhite);
   transition: 0.15s ease;
+  width: fit-content;
+  text-decoration: none;
 }
 
-.primary-button {
+.secondary-button {
+  padding: 0.5rem 1rem;
+  background-color: var(--colorsecondary);
+  border: transparent;
+  border-radius: 4px;
+  color: var(--colorprimary);
+  transition: 0.15s ease;
+  border: solid 1px var(--colorprimary);
+  width: fit-content;
+  text-decoration: none;
+}
+
+.primary-button,
+.secondary-button {
   font: var(--p16);
 }
 
@@ -77,9 +92,21 @@ p {
   cursor: pointer;
 }
 
+.secondary-button:hover {
+  color: var(--colorhover);
+  border: solid 1px var(--colorhover);
+  cursor: pointer;
+}
+
 .primary-button:active,
 .header-button:active {
   background-color: var(--colorpressed);
+  cursor: pointer;
+}
+
+.secondary-button:active {
+  color: var(--colorpressed);
+  border: solid 1px var(--colorpressed);
   cursor: pointer;
 }
 
@@ -225,7 +252,7 @@ header {
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.25rem;
 }
 
 .why {
@@ -235,6 +262,7 @@ header {
 .why-desc {
   font: var(--h2);
   color: var(--colorblack);
+  margin-bottom: 2.5rem;
 }
 
 .why-cards {
