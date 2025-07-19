@@ -199,6 +199,109 @@ header {
   background: var(--colorhover);
 }
 
+/* Footer Styling */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 30vh;
+  background-color: var(--colorprimary);
+  padding: 2.5rem 6.25rem;
+}
+
+.footer-top h2 {
+  color: white;
+  flex: 1;
+}
+
+.footer-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-divider {
+  border: 1px solid rgba(207, 234, 219, 0.4);
+  width: 80%;
+  margin-top: 3.25rem;
+}
+
+.footer-bot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.secondary-text-input {
+  padding: 0.5rem 1rem;
+  background-color: var(--colorsecondary);
+  border: transparent;
+  border-radius: 4px;
+  color: var(--colorprimary);
+  transition: 0.15s ease;
+  border: solid 1px var(--colorprimary);
+  width: fit-content;
+  text-decoration: none;
+  font: var(--p16);
+}
+
+.secondary-text-input:hover {
+  color: var(--colorhover);
+  border: solid 1px var(--colorhover);
+  cursor: text;
+}
+
+.secondary-text-input:active {
+  color: var(--colorpressed);
+  border: solid 1px var(--colorpressed);
+  cursor: text;
+}
+
+.secondary-text-input:focus {
+  outline: 2px solid var(--colorfocus);
+}
+
+.secondary-text-input::placeholder {
+  color: var(--colorprimary);
+}
+
+.subscribe-inputs button {
+  background-color: white;
+}
+
+.socials {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.socials img {
+  height: 2.25rem;
+  width: auto;
+}
+
+.social-icon {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: rgba(207, 234, 219, 0.4);
+  border-radius: 50%;
+}
+
 /* Home Page Styling */
 .hero {
   width: 100%;
