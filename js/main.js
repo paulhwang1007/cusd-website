@@ -1,3 +1,4 @@
+// Highlight Current Page Link on Nav Bar in Header
 function highlightCurrentPageLink() {
   const currentPath = window.location.pathname;
   const headerLinks = document.querySelectorAll(".header-link");
@@ -25,3 +26,5 @@ function loadHeader() {
       highlightCurrentPageLink();
     });
 }
+
+// Horizontal Image Loop

@@ -21,7 +21,7 @@
   --h4: normal 1.25rem/1.75rem var(--ff);
   --p16: normal 1rem/1.5rem var(--ff);
   --p12: normal 0.75rem/1rem var(--ff);
-  --shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+  --shadow: 10px 10x 15px rgba(0, 0, 0, 0.05);
   --text-shadow: 1px 1px 2px black;
 }
 
@@ -91,7 +91,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.975);
   height: 7rem;
   box-shadow: var(--shadow);
 }
@@ -287,8 +287,91 @@ header {
   color: #9e9e9e;
 }
 
-/* About Section Styling */
-.about {
-  height: 100vh;
-  width: 100%;
+/* Images */
+.images-section {
+  height: 80vh;
+  width: auto;
+  background-color: var(--colorsecondary);
+  padding: 5rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-image-container {
+  width: 90%;
+  position: relative;
+  margin-inline: auto;
+  height: 40rem;
+  overflow: hidden;
+  border-radius: 4px;
+  /* mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(0, 0, 0, 0) 100%
+  ); */
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -60rem;
+  }
+}
+
+.home-images img {
+  height: 40rem;
+  width: 60rem;
+  border-radius: 4px;
+  position: absolute;
+  left: calc(55rem * 10);
+  animation-name: scrollLeft;
+  animation-duration: 90s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.img1 {
+  animation-delay: calc(90s / 10 * (10 - 1) * -1);
+}
+
+.img2 {
+  animation-delay: calc(90s / 10 * (10 - 2) * -1);
+}
+
+.img3 {
+  animation-delay: calc(90s / 10 * (10 - 3) * -1);
+}
+
+.img4 {
+  animation-delay: calc(90s / 10 * (10 - 4) * -1);
+}
+
+.img5 {
+  animation-delay: calc(90s / 10 * (10 - 5) * -1);
+}
+
+.img6 {
+  animation-delay: calc(90s / 10 * (10 - 6) * -1);
+}
+
+.img7 {
+  animation-delay: calc(90s / 10 * (10 - 7) * -1);
+}
+
+.img8 {
+  animation-delay: calc(90s / 10 * (10 - 8) * -1);
+}
+
+.img9 {
+  animation-delay: calc(90s / 10 * (10 - 9) * -1);
+}
+
+.img10 {
+  animation-delay: calc(90s / 10 * (10 - 10) * -1);
 }
