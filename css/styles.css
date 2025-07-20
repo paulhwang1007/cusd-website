@@ -21,7 +21,7 @@
   --h4: normal 1.25rem/1.75rem var(--ff);
   --p16: normal 1rem/1.5rem var(--ff);
   --p12: normal 0.75rem/1rem var(--ff);
-  --shadow: 10px 10x 15px rgba(0, 0, 0, 0.05);
+  --shadow: 0 0 8px -4px var(--colorgray);
   --text-shadow: 1px 1px 2px black;
 }
 
@@ -316,15 +316,11 @@ footer {
   background-color: rgba(207, 234, 219, 0.75);
 }
 
-/* || Home Page Styling */
-.hero {
+/* || Hero Section Styling */
+.hero-home,
+.hero-team {
   width: 100%;
   min-height: 90vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.725), rgba(0, 0, 0, 0.725)),
-    url("/assets/images/hero-img.avif");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -332,6 +328,22 @@ footer {
   text-align: center;
   gap: 3.25rem;
   color: white;
+}
+
+.hero-home {
+  background: linear-gradient(rgba(0, 0, 0, 0.725), rgba(0, 0, 0, 0.725)),
+    url("/assets/images/hero-img.avif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-team {
+  background: linear-gradient(rgba(0, 0, 0, 0.775), rgba(0, 0, 0, 0.775)),
+    url("/assets/images/clubfest.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -526,4 +538,89 @@ footer {
 
 .img10 {
   animation-delay: calc(90s / 10 * (10 - 10) * -1);
+}
+
+/* || Team Page Styling */
+.team-section-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorsecondary);
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2.5rem 3.75rem;
+  gap: 1.5rem;
+  margin: 1rem;
+}
+
+.team-container h1 {
+  color: var(--colorprimary);
+  text-shadow: var(--shadow);
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.team-member-card {
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.member-position {
+  width: 17.5rem;
+  height: 5rem;
+  background-color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+
+.member-position h3 {
+  color: var(--colorprimary);
+}
+
+.team-member-card img {
+  display: flex;
+  flex-direction: column;
+  width: 17.5rem;
+  height: auto;
+}
+
+.team-member-card-text {
+  display: flex;
+  flex-direction: column;
+  width: 17.5rem;
+  height: 10rem;
+  background-color: white;
+  padding: 0.75rem 1rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  gap: 0.2rem;
+}
+
+.member-name {
+  color: var(--colorprimary);
+}
+
+.member-info,
+.member-year {
+  font: var(--p16);
+  color: var(--colorgray);
+}
+
+.member-year {
+  margin-top: auto;
 }
