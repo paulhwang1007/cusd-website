@@ -24,6 +24,18 @@ function loadHeader() {
     .then((data) => {
       document.getElementById("header-placeholder").innerHTML = data;
       highlightCurrentPageLink();
+
+      const links = document.querySelector("ul");
+      const burger = document.querySelector(".burger-menu");
+      const closeMenu = document.querySelector(".close-menu");
+
+      burger.addEventListener("click", function () {
+        links.classList.add("display");
+      });
+
+      closeMenu.addEventListener("click", function () {
+        links.classList.remove("display");
+      });
     });
 }
 
@@ -34,5 +46,3 @@ function loadFooter() {
       document.getElementById("footer-placeholder").innerHTML = data;
     });
 }
-
-// Horizontal Image Loop
