@@ -426,6 +426,7 @@ footer {
 }
 
 .why-text {
+  flex: 1;
   margin: 1rem;
   width: 40%;
   height: auto;
@@ -1054,6 +1055,7 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+  /* Header */
   .header-links,
   .header-button {
     display: none;
@@ -1089,5 +1091,15 @@ footer {
 
   .header-link {
     font-size: 2rem;
+  }
+
+  /* Why CUSD */
+  .why-cusd {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .why-text {
+    width: 100%;
   }
 }
