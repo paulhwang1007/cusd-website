@@ -319,7 +319,8 @@ footer {
 /* || Hero Section Styling */
 .hero,
 .hero-team,
-.hero-apply {
+.hero-apply,
+.hero-projects {
   width: 100%;
   min-height: 90vh;
   display: flex;
@@ -334,6 +335,14 @@ footer {
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.725), rgba(0, 0, 0, 0.725)),
     url("/assets/images/hero-img.avif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-projects {
+  background: linear-gradient(rgba(0, 0, 0, 0.775), rgba(0, 0, 0, 0.775)),
+    url("/assets/images/ssa-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -643,8 +652,9 @@ footer {
   margin-top: auto;
 }
 
-/* || Quote */
-.quote-container {
+/* || Quote + Caption */
+.quote-container,
+.caption-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -657,7 +667,12 @@ footer {
   box-shadow: var(--shadow);
 }
 
-.quote {
+.caption-container {
+  min-height: 10vh;
+}
+
+.quote,
+.caption {
   color: white;
   display: flex;
   flex-direction: column;
@@ -665,6 +680,10 @@ footer {
   align-items: end;
   width: 75%;
   gap: 0.5rem;
+}
+
+.caption {
+  align-items: center;
 }
 
 .quote h4 {
@@ -851,7 +870,7 @@ footer {
 
   .timeline-circle,
   .event-right .timeline-circle {
-    left: -1.33rem;
+    left: -1.35rem;
   }
 
   .left-timeline-arrow,
@@ -908,4 +927,80 @@ footer {
 
 .application-content h4 {
   color: var(--colorgray);
+}
+
+/* Project Teams Styling */
+.projects-container {
+  padding: 2rem 1rem;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  display: flex;
+  width: 45%;
+  min-height: 20vh;
+  height: auto;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  margin: 1rem;
+  border: 2px solid var(--colorlightgray);
+  border-radius: 8px;
+}
+
+.project-logo {
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 8px;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.project-description p {
+  color: var(--colorgray);
+}
+
+.aquaculture-description h2 {
+  color: #7bced5;
+}
+
+.arc-description h2 {
+  color: #64d3cb;
+}
+
+.currents-description h2 {
+  color: #fbd93f;
+}
+
+.marcomm-description h2 {
+  color: #a8dfef;
+}
+
+.soil-factory-description h2 {
+  color: #b5651d;
+}
+
+.solar-panel-reboot-description h2 {
+  color: #f09f6b;
+}
+
+.sustainable-city-description h2 {
+  color: #2f9e86;
+}
+
+.sustainable-mobility-description h2 {
+  color: #414764;
+}
+
+.sustainable-smithsonian-description h2 {
+  color: #2778b8;
 }
