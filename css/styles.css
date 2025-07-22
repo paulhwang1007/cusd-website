@@ -1149,4 +1149,9 @@ footer {
   .project {
     width: 90%;
   }
+
+  /* Application Page */
+  .application-container {
+    padding: 2rem;
+  }
 }
