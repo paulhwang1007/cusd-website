@@ -1141,4 +1141,12 @@ footer {
   .why-text {
     width: 100%;
   }
+
+  /* Projects */
+  .projects {
+    flex-direction: column;
+  }
+  .project {
+    width: 90%;
+  }
 }
